@@ -46,6 +46,7 @@ namespace FluentMigrator.Builders
         TNext AsString();
         TNext AsString(int size);
         TNext AsTime();
+        TNext AsTime(int precision);
         TNext AsXml();
         TNext AsXml(int size);
         TNext AsCustom(string customType);

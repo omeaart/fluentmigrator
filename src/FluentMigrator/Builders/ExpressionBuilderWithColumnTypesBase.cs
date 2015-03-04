@@ -166,6 +166,13 @@ namespace FluentMigrator.Builders
             return (NextT)(object)this;
         }
 
+        public NextT AsTime(int precision)
+        {
+            Column.Type = DbType.Time;
+            Column.Precision = precision;
+            return (NextT)(object)this;
+        }
+
         public NextT AsXml()
         {
             Column.Type = DbType.Xml;
